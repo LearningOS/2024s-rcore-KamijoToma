@@ -82,9 +82,9 @@ RUN cargo install cargo-binutils; \
 	rustup component add clippy;
 
 # 3. Cargo vendor
-WORKDIR ${HOME}
-COPY os/vendor ./os-vendor
-COPY user/vendor ./user-vendor
+# WORKDIR ${HOME}
+# COPY os/vendor ./os-vendor
+# COPY user/vendor ./user-vendor
 
 # Ready to go
 WORKDIR ${HOME}
